@@ -21,7 +21,8 @@ jobs:
       - name: Build and Push Multi-Arch Image
         run: |
            cd backend && \
-           docker buildx build \
-            --platform linux/amd64,linux/arm64,linux/s390x,linux/ppc64le \
-            -t quay.io/skupper/hello-world-backend \
-            --push -f Containerfile . 
+           plano build
+#           docker buildx build \
+#            --platform linux/amd64,linux/arm64,linux/s390x,linux/ppc64le \
+#            -t quay.io/skupper/hello-world-backend \
+#            --push -f Containerfile . 
