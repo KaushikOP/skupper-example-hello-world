@@ -20,7 +20,7 @@
 from plano import *
 from plano.github import *
 
-image_tag = "quay.io/skupper/hello-world-frontend"
+image_tag = "quay.io/ktalathi/skupper/hello-world-frontend"
 
 
 @command
