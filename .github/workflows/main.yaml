@@ -28,7 +28,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        skupper-version: [latest, main]
+        skupper-version: [v1-dev-release, main]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
