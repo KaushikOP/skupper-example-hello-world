@@ -1,5 +1,13 @@
 name: Build and Push Multi-Arch Image
-on: [push]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+      - '.github/workflows/build-multiarch-backend.yml'
+      
+  workflow_dispatch:
 
 jobs:
   build-and-push:
